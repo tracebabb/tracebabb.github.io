@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset=utf-8>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Graphics Demonstration</title>
+</head>
+<body>
+ <ul id="menu">
+            	<li class="menuitem"><a href="index.html" >Home</a></li>
+                <li class="menuitem"><a href="https://www.linkedin.com/in/breanna-o-shea-2b3b7013b/" >About</a></li>
+                <li class="menuitem"><a href="javascript.html" >JavaScript Programs</a></li>
+                <li class="menuitem"><a href="fieldreport.pdf" >Field Report</a></li>
+                <li class="menuitem"><a href="graphics.html" >Graphics and Media Demo</a></li>
+		<li class="menuitem"><a href="usability.pdf">Usability</a></li>
+            </ul><br>
+			<br>
+			<br>
+<p>Image to use:</p>
+<img id="pc" src="DSC_0063.JPG" alt="The PC" width="256" height="256">
+
+<p>Canvas to fill:</p>
+<canvas id="prettyCanvas" width="270" height="300"
+style="border:1px solid #d3d3d3;">
+</canvas>
+<p><button onclick="prettyCanvas()">Try it</button></p>
+
+<script>
+function prettyCanvas() {
+    var c = document.getElementById("prettyCanvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("chair");
+    ctx.drawImage(img,10,10);
+}
+</script>
+<audio controls>
+  <source src="mouse-click.mp3" type="audio/mpeg">
+  <source src="mouse-click.mp3" type="audio/mpeg">
+</audio><br>
+<svg width="300" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:blue;stroke:pink;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+<br>
+<video width="400" controls>
+  <source src="bloop9.mp4" type="video/mp4">
+  <source src="bradpaisley.ogg" type="video/ogg">
+</video>
+
+</body>
+</html>
