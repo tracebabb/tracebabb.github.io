@@ -1,0 +1,56 @@
+<html lang="en-US">
+<head>
+<meta charset=utf-8>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>JavaScript Programs</title>
+</head>
+<body>
+ <ul id="menu">
+            	<li class="menuitem"><a href="index.html" >Home</a></li>
+                <li class="menuitem"><a href="https://www.linkedin.com/in/breanna-o-shea-2b3b7013b/" >About</a></li>
+                <li class="menuitem"><a href="javascript.html" >JavaScript Programs</a></li>
+                <li class="menuitem"><a href="fieldreport.pdf" >Field Report</a></li>
+                <li class="menuitem"><a href="graphics.html" >Graphics and Media Demo</a></li>
+		<li class="menuitem"><a href="usability.pdf">Usability</a></li>
+            </ul><br>
+			<br>
+			<br>
+<h3>Greeting</h3><br>
+<h4>Problem Statement</h4>
+<p>Write a program that asks the user for their name and greets them with their name. </p><br>
+<h4>Plans and pseudocode</h4>
+<p>Declare var name</p>
+<p>Ask the user for their name</p>
+<p>Store in name</p>  
+<p>Output greeting including name and a question</p>
+<p>Declare var answer</p> 
+<p>Ask the user for their answer to the question</p>
+<p>Store in answer</p> 
+<p>Output a response</p><br>
+<h4>Demonstration</h4>
+<button onclick="greeting()">What is Your Name?</button>
+<p id="names"></p>
+<script>
+function greeting() {
+    var name = prompt("");
+    if (name != null) {
+       document.getElementById("names").innerHTML =
+        "Hello " + name + "! How are you today?";
+    }
+}
+</script>
+<button onclick="theirAnswer()">Answer</button>
+<p id="answer"></p>
+<script>
+function theirAnswer() {
+    var answer = prompt("");
+    if (answer != null) {
+        document.getElementById("answer").innerHTML =
+        "I'm glad you are doing " + answer + "!";
+      }  
+}
+</script>
+<a href="javascript2.html">Next Page</a>
+
+  </body>
+</html>
